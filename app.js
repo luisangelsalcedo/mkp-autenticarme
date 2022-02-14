@@ -1,11 +1,7 @@
 const express = require("express");
 const mongoose = require("mongoose");
 
-mongoose.connect(
-  process.env.MONGODB_URL ||
-    "mongodb+srv://admin:4dm1n@products.bnrj3.mongodb.net/visitor",
-  { useNewUrlParser: true }
-);
+mongoose.connect(process.env.MONGODB_URL, { useNewUrlParser: true });
 
 // Schema
 const userSchema = {
